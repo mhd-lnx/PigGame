@@ -189,3 +189,14 @@ main {
     padding: 5rem 2rem;
   }
 }
+@media (max-width:536px){
+  .btn--new {
+    top: 21rem;
+  }
+  .btn--roll{
+    top: 35.3rem;
+  }
+  .btn--hold{
+    top: 40.1rem;
+  }
+}
