@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -15,11 +15,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  background-image: linear-gradient(to top left, #353cc4d2 0%, #6a36eec3 100%);
 }
 .hidden {
   display: none;
@@ -33,7 +33,7 @@ main {
   backdrop-filter: blur(200px);
   filter: blur();
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
+  border-radius: 20px;
   overflow: hidden;
   display: flex;
 }
@@ -61,7 +61,7 @@ main {
 .score {
   font-size: 8rem;
   font-weight: 300;
-  color: #c7365f;
+  color: #3670c7;
   margin-bottom: auto;
 }
 
@@ -80,14 +80,15 @@ main {
 }
 
 .current {
-  background-color: #c7365f;
+  background-color: #6136c7;
   opacity: 0.8;
-  border-radius: 9px;
+  border-radius: 20px;
   color: #fff;
   width: 65%;
   padding: 2rem;
   text-align: center;
   transition: all 0.75s;
+  box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.15);
 }
 
 .current-label {
@@ -117,19 +118,19 @@ main {
   transition: all 0.2s;
 
   background-color: white;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(250, 249, 255, 0.986);
   backdrop-filter: blur(10px);
 
-  padding: 0.7rem 2.5rem;
-  border-radius: 50rem;
+  padding: 0.9rem 2.5rem;
+  border-radius: 10px;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
 }
 
-.btn::first-letter {
+/* .btn::first-letter {
   font-size: 2.4rem;
   display: inline-block;
   margin-right: 0.7rem;
-}
+} */
 
 .btn--new {
   top: 4rem;
@@ -157,6 +158,7 @@ main {
   transform: translateX(-50%);
   height: 10rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 .player--winner {
@@ -166,4 +168,24 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+/* media //////////// */
+@media (max-width:768px){
+  html{
+    font-size: 58%;
+  }
+}
+@media (max-width:697px){
+  html{
+    font-size: 50%;
+  }
+}
+@media (max-width:596px){
+  html{
+    font-size: 45%;
+  }
+  .player{
+    padding: 5rem 2rem;
+  }
 }
